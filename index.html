@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Calcutor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+        body {
+            background-image: url("img/ig.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        header {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #a
+        {
+            background-color: rgb(255, 0, 34);
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="card w-50 m-auto text-center">
+            <div class="card-header bg-danger text-white" id="a">
+                Love Calculator
+            </div>
+            <div class="card-body">
+                <form action="post" class="form-inline w-75 m-auto">
+                    <div class="form-group">
+                        <input type="text" name="" class="form-control text-center" placeholder="your name" />
+                    </div>
+                    <div><span class="pl-4 pr-4">+</span></div>
+                    <div class="form-group">
+                        <input type="text" name="" class="form-control text-center" placeholder="Love name" />
+                    </div>
+                </form>
+                <br />
+                <div class="w-50 m-auto">
+                    <button class="btn btn-success w-50" id="a" onclick="checkloveper()"  >CLICK</button>
+                </div>
+                <br />
+                <div>
+                    <input type="text" name="" id="lovevalue" class="form-control text-center w-25 m-auto"
+                        placeholder="Love Percentage" />
+                </div>
+            </div>
+            <div class="card-footer">God Bless Your Relationship</div>
+        </div>
+    </header>
+
+    <script>
+      
+function checkloveper() {
+
+   let lovedata=Math.random()*100;
+    lovedata=Math.floor(lovedata);
+  let a=  document.getElementById('lovevalue');
+  a.value = lovedata+"%";
+    
+}
+
+
+
+
+    </script>
+</body>
+
+</html>
